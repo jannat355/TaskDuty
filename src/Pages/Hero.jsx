@@ -4,8 +4,11 @@ import "../styles/Hero.css";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
+  const scrollToTop =()=>{
+    window.scroll({top:0, behavior:'smooth'})
+  };
   return (
-    <div className="container text-center">
+    <div className="container">
       <h1>
         <img src={arrow} alt="" />
         New Task
@@ -44,9 +47,10 @@ const Hero = () => {
         
       </div>
 
-      <button className="btn text-light m-5 alaign-items-center w-75">Done</button>
-      <Link to ='/'><h5 className="text-primary text-center top">Back to top</h5></Link>
-
+    <div className="text-center">
+    <button className="btn text-light m-5 alaign-items-center w-75">Done</button>
+    </div>
+    <Link onClick={scrollToTop} ><p className='text-center fs-4 mt-5' style={{color:'#974FD0'}}>Back to Top</p></Link>
      
     </div>
   );

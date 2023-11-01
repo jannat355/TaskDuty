@@ -11,15 +11,20 @@ const Tasks = () => {
       <div className="mt-3 d-flex justify-content-between align-items-center">
         <h2>My Tasks</h2>
         <h5 className="d-flex gap-2">
-          <img src={Plus} alt="" />
-          <span className="ml-3">Add new Task</span>
+          <Link to="/Hero">
+            <img src={Plus} alt="" />{" "}
+          </Link>
+
+          <Link to="/Hero" className="text-decoration-none">
+            <span className="ml-3 add">Add new Task</span>
+          </Link>
         </h5>
       </div>
       <div className="mt-5 border rounded">
         <div className="d-flex justify-content-between align-items-center">
           <h4 className="text-danger ms-3">urgent</h4>
           <div className="d-flex gap-3 me-3 my-3">
-            <button
+          <button
               style={{ backgroundColor: "purple" }}
               className="btn text-light"
             >
