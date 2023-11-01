@@ -48,7 +48,7 @@ const Hero = () => {
       </div>
 
     <div className="text-center">
-    <button className="btn text-light m-5 alaign-items-center w-75">Done</button>
+   <Link to='/Tasks'> <button className="btn text-light m-5 alaign-items-center w-75">Done</button></Link>
     </div>
     <Link onClick={scrollToTop} ><p className='text-center fs-4 mt-5' style={{color:'#974FD0'}}>Back to Top</p></Link>
      

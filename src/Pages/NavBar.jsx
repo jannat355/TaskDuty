@@ -8,16 +8,16 @@ const NavBar = () => {
     <div className="">
       <div className=" container d-flex justify-content-between align-items-center p-3  ">
         <div className="d-flex ">
-          <Link to="/Hero" className="text-decoration-none">
+          <Link to="/" className="text-decoration-none">
             <img src={taskDutyLogo} alt="" className="img-fluid"/>
           </Link>
         </div>
 
         <div className="d-flex gap-3 align-items-center">
-          <Link to="/Hero" className="text-decoration-none  fs-4">
+          <Link to="/Hero" className="text-decoration-none  fs-4 text-dark">
             New task
           </Link>
-          <Link to="/Tasks" className="text-decoration-none fs-4">
+          <Link to="/Tasks" className="text-decoration-none fs-4 text-dark">
             
             All task
           </Link>

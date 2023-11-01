@@ -4,7 +4,7 @@ import Home from './Pages/Home'
 import NavBar from './Pages/NavBar'
 import Hero from './Pages/Hero'
 import Tasks from './Pages/Tasks'
-// import Edit from './Pages/Edit'
+import Edit from './Pages/Edit'
 
 function App() {
   
@@ -17,7 +17,7 @@ function App() {
         <Route index element={<Home/>}/>
         <Route path="/Hero" element={<Hero />} />
         <Route path="/Tasks" element={<Tasks/>} />
-        {/* <Route path="/Edit" element={<Edit/>} /> */}
+        <Route path="/Edit" element={<Edit/>} />
         
 
 

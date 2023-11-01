@@ -6,6 +6,9 @@ import "../styles/Tasks.css";
 import { Link } from "react-router-dom";
 
 const Tasks = () => {
+  const scrollToTop = () => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="container">
       <div className="mt-3 d-flex justify-content-between align-items-center">
@@ -24,13 +27,13 @@ const Tasks = () => {
         <div className="d-flex justify-content-between align-items-center">
           <h4 className="text-danger ms-3">urgent</h4>
           <div className="d-flex gap-3 me-3 my-3">
-          <button
+           <Link to='/Edit'> <button
               style={{ backgroundColor: "purple" }}
               className="btn text-light"
             >
               <img src={edit} alt="" />
               Edit
-            </button>
+            </button></Link>
 
             <button className="btn delete border-radius">
               <img src={remove} alt="" />
@@ -57,13 +60,13 @@ const Tasks = () => {
         <div className="d-flex justify-content-between align-items-center">
           <h4 className="text-success ms-3">Important</h4>
           <div className="d-flex gap-3 me-3 my-3">
-            <button
+          <Link to='/Edit'> <button
               style={{ backgroundColor: "purple" }}
               className="btn text-light"
             >
               <img src={edit} alt="" />
               Edit
-            </button>
+            </button></Link>
 
             <button className="btn delete border-radius">
               <img src={remove} alt="" />
@@ -90,13 +93,13 @@ const Tasks = () => {
         <div className="d-flex justify-content-between align-items-center">
           <h4 className="text-danger ms-3">urgent</h4>
           <div className="d-flex gap-3 me-3 my-3">
-            <button
+          <Link to='/Edit'> <button
               style={{ backgroundColor: "purple" }}
               className="btn text-light"
             >
               <img src={edit} alt="" />
               Edit
-            </button>
+            </button></Link>
 
             <button className="btn delete border-radius">
               <img src={remove} alt="" />
@@ -123,13 +126,13 @@ const Tasks = () => {
         <div className="d-flex justify-content-between align-items-center">
           <h4 className="text-success ms-3">Important</h4>
           <div className="d-flex gap-3 me-3 my-3">
-            <button
+          <Link to='/Edit'> <button
               style={{ backgroundColor: "purple" }}
               className="btn text-light"
             >
               <img src={edit} alt="" />
               Edit
-            </button>
+            </button></Link>
 
             <button className="btn delete border-radius">
               <img src={remove} alt="" />
@@ -151,8 +154,10 @@ const Tasks = () => {
         </div>
       </div>
 
-      <Link to="/" className="end text-center m-5">
-        <h5>Back To Top</h5>
+      <Link onClick={scrollToTop}>
+        <p className="text-center fs-4 mt-5" style={{ color: "#974FD0" }}>
+          Back to Top
+        </p>
       </Link>
     </div>
   );
