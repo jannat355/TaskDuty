@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import face from "../assets/Group 6.svg";
 import taskDutyLogo from "../assets/task-duty-logo.svg";
+// import Dropdown from 'react-bootstrap/Dropdown';
 
 const NavBar = () => {
   return (
@@ -21,6 +22,8 @@ const NavBar = () => {
             
             All task
           </Link>
+
+         
           <Link className="d-none d-md-block">
             <img src={face} alt=""  className="face"/>
           </Link>
