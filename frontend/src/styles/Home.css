@@ -1,0 +1,10 @@
+.pod{
+    color: rgb(138, 72, 138);
+}
+.btn{
+    background-color: rgb(149, 76, 149);
+    
+}
+.btn:hover{
+    background-color:blueviolet
+}

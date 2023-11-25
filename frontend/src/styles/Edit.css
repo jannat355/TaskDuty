@@ -1,0 +1,48 @@
+.fieldset-container input{
+    border: white;
+    outline: none;
+}
+
+.fieldset-container{
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.fieldset-title{
+    position: absolute;
+    background: #fff;
+    top: -10px;
+    left: 10px;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.field-container input{
+    border: white;
+    outline: none;
+    
+}
+
+.field-container{
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 250px;
+    
+}
+
+.field-title{
+    position: absolute;
+    background: #fff;
+    top: -10px;
+    left: 10px;
+    padding: 0 10px;
+    z-index: 1;
+}
+

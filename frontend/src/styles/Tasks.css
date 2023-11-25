@@ -1,0 +1,13 @@
+.delete{
+    border-color: purple;
+    background-color: white;
+    
+}
+
+.delete:hover{
+    background-color:rgb(222, 182, 222);
+}
+
+.add{
+    color: rgb(212, 129, 212);
+}
