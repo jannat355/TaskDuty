@@ -11,3 +11,32 @@
 .add{
     color: rgb(212, 129, 212);
 }
+
+.fetch{
+    border: 1px solid black;
+    margin: 2rem;
+    
+}
+
+.pass{
+    border-bottom: 1px solid rgb(21, 21, 21);
+    margin: 1rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.bg{
+    background-color: rgb(147, 96, 147);
+    color: white;
+    border: 1px solid rgb(165, 101, 165);
+    border-radius: 0.5rem;
+
+}
+
+.bgc{
+    border-color: purple;
+    background-color: white;
+    border: 1px solid #974FD0;
+    border-radius: 0.5rem;
+}

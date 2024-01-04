@@ -4,7 +4,12 @@ import Home from './Pages/Home'
 import NavBar from './Pages/NavBar'
 import Hero from './Pages/Hero'
 import Tasks from './Pages/Tasks'
-import Edit from './Pages/Edit'
+import Edit from './Pages/Edit';
+// import { ToastContainer } from 'react-toastify';
+import  { Toaster } from 'react-hot-toast';
+import SingleTask from './Pages/SingleTask'
+
+
 
 function App() {
   
@@ -18,6 +23,7 @@ function App() {
         <Route path="/Hero" element={<Hero />} />
         <Route path="/Tasks" element={<Tasks/>} />
         <Route path="/Edit" element={<Edit/>} />
+        <Route path="/SingleTask" element={<SingleTask/>} />
         
 
 
@@ -27,7 +33,10 @@ function App() {
       
       
       
-      
+      {/* <ToastContainer /> */}
+      <Toaster />
+
+
       
       </BrowserRouter>
     </>
